@@ -54,8 +54,8 @@ if __name__ == '__main__':
     width = 0.35  # the width of the bars
 
     fig, ax = plt.subplots()
-    rects1 = ax.bar(x - width / 2, tempos_radix, width, label='RadixSort')
-    rects2 = ax.bar(x + width / 2, tempos_quick, width, label='QuickSort')
+    rects1 = ax.bar(x - width / 2, tempos_radix, width, label='RadixSort',color='b')
+    rects2 = ax.bar(x + width / 2, tempos_quick, width, label='QuickSort',color='c')
 
     # Add some text for labels, title and custom x-axis tick labels, etc.
     ax.set_ylabel('Tempo em segundos')
@@ -75,8 +75,8 @@ if __name__ == '__main__':
     # fig2.add_subplot()
     plt.show()
 
-    plt.plot(tempos_radix, color='g')
-    plt.plot(tempos_quick, color='b')
+    plt.plot(tempos_radix, color='b')
+    plt.plot(tempos_quick, color='c')
     plt.show()
 
     # fig = plt.figure()
